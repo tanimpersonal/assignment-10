@@ -3,7 +3,7 @@ var jwt = require("jsonwebtoken");
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const cors = require("cors");
 require("dotenv").config();
-const port = process.env.port || 5000; //first part needs for heroku
+const port = process.env.PORT || 5000; //first part needs for heroku
 const app = express();
 //middleware
 app.use(cors());
